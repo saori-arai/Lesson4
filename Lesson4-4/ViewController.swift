@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tapSomButtan(_ sender: Any) {
+        
+        let resultViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ResultViewController")
+
+        
+            self.present(resultViewController, animated:  true) {
+        }
+        
+    }
 
 }
-
