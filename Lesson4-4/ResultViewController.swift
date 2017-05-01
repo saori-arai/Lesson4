@@ -21,11 +21,8 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func tapCloseButton(_ sender: Any) {
-        self.dismiss(animated: false){
-            
-            }
+        self.dismiss(animated: false)
     }
-
     /*
     // MARK: - Navigation
 

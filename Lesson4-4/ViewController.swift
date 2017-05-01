@@ -24,9 +24,7 @@ class ViewController: UIViewController {
         
         let resultViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ResultViewController")
 
-        
-            self.present(resultViewController, animated:  true) {
-        }
+            self.present(resultViewController, animated:  true) 
         
     }
 
