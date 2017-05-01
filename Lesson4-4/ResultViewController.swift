@@ -10,6 +10,11 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    //受け取る為の変数
+    var x:Int = 1
+    var y:Int = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -18,6 +23,9 @@ class ResultViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    
+    let result = x + y
+    label.text = "合計は　\(result) です"
     }
     
     @IBAction func tapCloseButton(_ sender: Any) {

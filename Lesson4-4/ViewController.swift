@@ -23,8 +23,11 @@ class ViewController: UIViewController {
     @IBAction func tapSomButtan(_ sender: Any) {
         
         let resultViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ResultViewController")
-
-            self.present(resultViewController, animated:  true) 
+            self.present(resultViewController, animated:  true)
+        
+        resultViewController.x = 1
+        resultViewController.y = 1
+        
         
     }
 
